@@ -57,3 +57,4 @@ if v:version >= 703
 endif
 
 autocmd BufReadPost * call handy#JumpToLatest()
+autocmd BufWritePost * call system('bsync '.expand('%:p').' &')
