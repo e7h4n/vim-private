@@ -56,5 +56,10 @@ if v:version >= 703
   set undofile
 endif
 
+" 干掉 swp 和备份文件
+set nobackup
+set nowb
+set noswapfile
+
 autocmd BufReadPost * call handy#JumpToLatest()
 autocmd BufWritePost * call system('bsync '.expand('%:p').' &')
