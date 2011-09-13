@@ -62,4 +62,7 @@ set nowb
 set noswapfile
 
 autocmd BufReadPost * call handy#JumpToLatest()
-autocmd BufWritePost * call system('bsync '.expand('%:p').' &')
+
+if (!(has("win32") || has("win64")))
+    autocmd BufWritePost * call system('bsync '.expand('%:p').' &')
+endif
