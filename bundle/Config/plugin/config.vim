@@ -61,6 +61,7 @@ set nobackup
 set nowb
 set noswapfile
 
+" 打开文件时跳到上次编辑的位置
 autocmd BufReadPost * call handy#JumpToLatest()
 
 if (!(has("win32") || has("win64")))
