@@ -46,10 +46,16 @@ snippet runs
 snippet l
 	console.log(${1});
 snippet dl
-	DEBUG && console.log(${1});
+	if (DEBUG) {
+		console.log(${1});
+	}
 snippet tmpldoc
 	/**
 	 * 模板函数
 	 * @function
 	 * @param {Object} [templateData]
+	 */
+snippet /**
+	/**
+	 * ${1}
 	 */
