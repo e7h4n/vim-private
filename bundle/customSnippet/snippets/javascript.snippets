@@ -44,10 +44,10 @@ snippet runs
 		${1}
 	});
 snippet l
-	console.log(${1});
+	console.log(${2:'$1'}, ${1});
 snippet dl
 	if (DEBUG) {
-		console.log(${1});
+		console.log('$1', ${1});
 	}
 snippet tmpldoc
 	/**
