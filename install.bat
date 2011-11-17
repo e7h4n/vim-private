@@ -1,10 +1,10 @@
-%HOME%/bin/elevate.exe fsutil hardlink create %HOME%\_vimrc %HOME%\.vim\vimrc
-%HOME%/bin/elevate.exe fsutil hardlink create %HOME%\_gvimrc %HOME%\.vim\gvimrc
-%HOME%/bin/junction.exe -q %HOME%\vimfiles %HOME%\.vim
-cd %HOME%\.vim
+%USERPROFILE%/bin/elevate.exe fsutil hardlink create %USERPROFILE%\_vimrc %USERPROFILE%\.vim\vimrc
+%USERPROFILE%/bin/elevate.exe fsutil hardlink create %USERPROFILE%\_gvimrc %USERPROFILE%\.vim\gvimrc
+%USERPROFILE%/bin/junction.exe -q %USERPROFILE%\vimfiles %USERPROFILE%\.vim
+cd %USERPROFILE%\.vim
 git submodule update --init
 md ftplugin\javascript
-%HOME%/bin/junction.exe -q %HOME%\vimfiles\ftplugin\javascript\jslint %HOME%\vimfiles\bundle\jslint\ftplugin\javascript\jslint
+%USERPROFILE%/bin/junction.exe -q %USERPROFILE%\vimfiles\ftplugin\javascript\jslint %USERPROFILE%\vimfiles\bundle\jslint\ftplugin\javascript\jslint
 
 echo "Installation finished"
 pause
