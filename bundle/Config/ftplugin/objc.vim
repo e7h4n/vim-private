@@ -1,4 +1,6 @@
-setl makeprg=open\ -a\ xcode\ &&\ osascript\ -e\ 'tell\ application\ \"Xcode\"\ to\ activate'\ -e\ 'delay\ 0.1'\ -e\ 'tell\ application\ \"System\ Events\"\ to\ key\ code\ 15\ using\ {command\ down}'
+if has('gui_macvim')
+    setl makeprg=open\ -a\ xcode\ &&\ osascript\ -e\ 'tell\ application\ \"Xcode\"\ to\ activate'\ -e\ 'delay\ 0.1'\ -e\ 'tell\ application\ \"System\ Events\"\ to\ key\ code\ 15\ using\ {command\ down}'
+endif
 
 nn <buffer> <silent> <leader>a :cal<SID>AlternateFile()<cr>
 
