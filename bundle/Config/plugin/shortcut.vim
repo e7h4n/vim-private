@@ -75,3 +75,11 @@ nmap t` /[A-Z]<cr>
 
 " 更新 FuzzyFinder 的 cache
 nmap <silent> <leader>fr :FufRenewCache<cr>
+
+" 使用 C-i 来调用 complete
+inoremap <C-j> <C-x><C-u>
+
+" 在 macvim 下通过 cmd+r 来 make 项目
+if has("gui_macvim")
+    nmap <D-r> :silent make<cr>
+endif

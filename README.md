@@ -68,8 +68,12 @@
     * <code>&lt;Ctrl&gt;-e</code>: 跳到命令行结束
 * Insert 模式
     * ii: 退出到 Norm 模式并保存文件
+    * <code>&lt;Ctrl&gt;-j</code>: 相当于 <code>&lt;Ctrl&gt;-x&lt;Ctrl&gt;-u</code>
+    * <code>&lt;Command&gt;-r</code>: 仅在 MacVim 下有效，执行 :silent make
 * FuzzyFinder
     * 参考插件列表中 FuzzyFinder 的介绍
+* Objective C 文件编辑
+    * <code>&lt;leader&gt;-a</code>: 在 .m 和 .h 文件间切换
 
 ## 插件
 
