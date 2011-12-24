@@ -4,3 +4,5 @@ let javascript_enable_domhtmlcss=1
 set omnifunc=javascriptcomplete#CompleteJS
 
 set cc=81
+abbr function() function ()
+abbr function function ()
