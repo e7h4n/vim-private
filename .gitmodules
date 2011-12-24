@@ -75,4 +75,4 @@
 	url = git://github.com/hail2u/vim-css3-syntax.git
 [submodule "bundle/jslint"]
 	path = bundle/jslint
-	url = https://github.com/hallettj/jslint.vim.git
+	url = https://github.com/perfectworks/jslint.vim.git
