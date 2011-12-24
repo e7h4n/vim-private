@@ -63,6 +63,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" 切换 buffer 时自动保存内容
+set autowriteall
+
 " 打开文件时跳到上次编辑的位置
 autocmd BufReadPost * call handy#JumpToLatest()
 
