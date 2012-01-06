@@ -5,4 +5,3 @@ set omnifunc=javascriptcomplete#CompleteJS
 
 set cc=81
 abbr function() function ()
-abbr function function ()
