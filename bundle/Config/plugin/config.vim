@@ -72,3 +72,6 @@ autocmd BufReadPost * call handy#JumpToLatest()
 if (!(has("win32") || has("win64")))
     autocmd BufWritePost * call system('bsync '.expand('%:p').' &')
 endif
+
+" 保存文件时自动去除 trailing whitespace
+autocmd BufWritePre *.js call handy#RemoveTrailingWhitespace()

@@ -27,3 +27,16 @@ function! handy#ToggleSnipple()
         edit `=expand("~/.vim/bundle/customSnippet/snippets/" . &ft . ".snippets")`
     endif
 endfunction
+
+" Remove trailing whitespace when writing a buffer, but not for diff files.
+" From: Vigil
+" @see http://blog.bs2.to/post/EdwardLee/17961
+function handy#RemoveTrailingWhitespace()
+    if &ft != "diff"
+        let b:curcol = col(".")
+        let b:curline = line(".")
+        silent! %s/\s\+$//
+        silent! %s/\(\s*\n\)\+\%$//
+        call cursor(b:curline, b:curcol)
+    endif
+endfunction
