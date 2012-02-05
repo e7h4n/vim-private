@@ -76,3 +76,6 @@
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = https://github.com/perfectworks/jslint.vim.git
+[submodule "bundle/localvimrc"]
+	path = bundle/localvimrc
+	url = git://github.com/vim-scripts/localvimrc.git
