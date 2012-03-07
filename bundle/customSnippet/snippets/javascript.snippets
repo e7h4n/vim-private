@@ -64,3 +64,14 @@ snippet /**
 snippet jslint
 	/*jslint browser: true, vars: true, nomen: true, indent: 4, maxlen: 80, plusplus: true, sloppy: true*/
 	/*global define: true */
+snippet single
+	var instance = null;
+	return {
+		getInstance: function () {
+			if (instance === null) {
+				instance = new ${1};
+			}
+
+			return instance;
+		}
+	};
