@@ -1,5 +1,7 @@
 snippet def
 	define(function (require, exports) {
+		'use strict';
+
 		${1}
 	});
 snippet req
@@ -64,7 +66,7 @@ snippet /**
 	 * ${1}
 	 */
 snippet jslint
-	/*jslint browser: true, vars: true, nomen: true, indent: 4, maxlen: 80, plusplus: true, sloppy: true*/
+	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
 	/*global define: true */
 snippet single
 	var instance = null;
@@ -77,3 +79,25 @@ snippet single
 			return instance;
 		}
 	};
+snippet evtdoc
+	/**
+	 * ${1} 事件的回调函数
+	 * @event
+	 * @private
+	 * @param {Event} evt
+	 */
+snippet tmpl
+	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
+
+	/*global define: true */
+
+	/**
+	 * @author zhangy<zhangyc@fenbi.com>
+	 * @version: $id: $
+	 */
+
+	define(function (require, exports) {
+		'use strict';
+
+		${1}
+	});
