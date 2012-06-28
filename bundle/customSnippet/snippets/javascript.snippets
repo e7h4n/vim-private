@@ -13,9 +13,9 @@ snippet for for length
 		var ${2:item} = $1[i];${3}
 	}
 snippet bb
-	var Backbone = require('../lib/backbone');
+	var Backbone = require('../${1}lib/backbone');
 snippet us
-	var _ = require('../lib/underscore');
+	var _ = require('../${1}lib/underscore');
 snippet ma
 	var Mustache = require('../lib/mustache');
 snippet jq
@@ -93,7 +93,7 @@ snippet tmpl
 
 	/**
 	 * @author zhangy<zhangyc@fenbi.com>
-	 * @version: $id: $
+	 * @version: $Id: $
 	 */
 
 	define(function (require, exports) {
@@ -101,3 +101,26 @@ snippet tmpl
 
 		${1}
 	});
+snippet vt
+	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
+
+	/*global define: true */
+
+	/**
+	 * @author zhangy<zhangyc@fenbi.com>
+	 * @version: $Id: $
+	 */
+
+	define(function (require, exports) {
+		'use strict';
+
+		var Backbone = require('../../lib/backbone');
+		var ${1:} = Backbone.View.extend({
+		});
+
+		return $1;
+	});
+snippet super
+	${1}.prototype.${2}.apply(this, arguments);
+snippet sc
+	${1}.prototype.initialize.apply(this, arguments);
