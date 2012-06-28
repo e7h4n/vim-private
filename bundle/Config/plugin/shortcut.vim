@@ -3,7 +3,7 @@ nmap <silent> <Leader>nt :NERDTreeToggle<CR>
 nmap <silent> <Leader>nf :NERDTreeFind<CR>
 
 " 更快的切换到刚刚编辑的文件上去
-nmap <silent> <space> <C-^>
+nmap <silent> <space> :CtrlPMRUFiles<cr>
 
 " CtrlP
 nmap <silent> <C-j> :CtrlPTag<cr>
