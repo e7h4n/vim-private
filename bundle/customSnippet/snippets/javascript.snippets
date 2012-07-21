@@ -124,3 +124,34 @@ snippet super
 	${1}.prototype.${2}.apply(this, arguments);
 snippet sc
 	${1}.prototype.initialize.apply(this, arguments);
+snippet valid
+	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
+
+	/*global define: true */
+
+	/**
+	 * @author zhangy<zhangyc@fenbi.com>
+	 * @version: $Id: $
+	 */
+
+	define(function (require, exports) {
+		'use strict';
+
+		/**
+		 * @param {Object} options
+		 * @param {Number} options.error
+		 */
+		return function (options) {
+			return function (elem) {
+				var FormUtil = require('../../../util/FormUtil');
+
+				var validResult = {};
+
+				var value = FormUtil.getValue(elem);
+
+				${1}
+
+				return validResult;
+			};
+		};
+	});
