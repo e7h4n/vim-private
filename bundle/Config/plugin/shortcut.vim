@@ -91,9 +91,6 @@ nnoremap y^ y0
 " 快速跳到下一个驼峰位置
 nmap t` /[A-Z]<cr>
 
-" 使用 C-i 来调用 complete
-inoremap <C-j> <C-x><C-u>
-
 " 在 macvim 下通过 cmd+r 来 make 项目
 if has("gui_macvim")
     nmap <D-r> :silent make<cr>

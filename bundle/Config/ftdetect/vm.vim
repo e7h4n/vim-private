@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.vm set syntax=vm filetype=vm
+au BufRead,BufNewFile *.vm set syntax=html filetype=html

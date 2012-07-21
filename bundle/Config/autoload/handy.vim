@@ -8,10 +8,10 @@ endfunction
 " 查找文字
 function! handy#SearchWord()
     let word = input("search:", expand("<cword>"))
-    if word[0] == "/" && word[len(word)-1] == "/"
-        execute "vimgrep ".word." **"
+    if word[0] == "/"
+        silent execute "grep -R ".word[1:]." ."
     else
-        execute "vimgrep /\\<".word."\\>/gj **"
+        silent execute "grep -R -w ".word." ."
     endif
     copen
 endfunction
