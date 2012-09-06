@@ -19,7 +19,7 @@ snippet us
 snippet ma
 	var Mustache = require('../lib/mustache');
 snippet jq
-	var $ = require('../lib/jquery');
+	var $ = require('../${1}lib/jquery');
 snippet dbc
 	var DbC = require('../util/DbC');
 snippet hr
@@ -155,3 +155,9 @@ snippet valid
 			};
 		};
 	});
+snippet lu
+	var loginUser = require('../${1:../}util/PageData').getLoginUser();
+snippet cu
+	var currentUser = require('../${1:../}util/PageData').getCurrentUser();
+snippet lc
+	console.count('${1}');
