@@ -80,4 +80,4 @@ autocmd BufWritePre *.js call handy#RemoveTrailingWhitespace()
 autocmd BufWritePost *.js call handy#GenerateTag()
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-set wildignore+=*/*target/*,*/target*/*,*/node_modules/*
+set wildignore+=*/*target/*,*/target*/*,*/node_modules/*,*/frontend-target/*,*/tmp_creta_frontend_root/*,*/.front-build-cache/*,frontend-target
