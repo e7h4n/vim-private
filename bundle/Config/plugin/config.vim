@@ -13,6 +13,7 @@ set backspace=indent,eol,start
 " 右下角显示标尺
 set ruler
 " 编码设置
+set enc=utf-8
 set fileencodings=ucs-bom,utf-8,gbk
 set fileformats=unix,dos,mac
 
