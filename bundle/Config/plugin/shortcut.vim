@@ -111,3 +111,6 @@ nnoremap ? ms?
 "  In visual mode when you press * or # to search for the current selection
 vnoremap <silent> * :call handy#VisualSearch('f')<CR>
 vnoremap <silent> # :call handy#VisualSearch('b')<CR>
+
+" Switch.vim
+nnoremap - :Switch<cr>

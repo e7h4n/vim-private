@@ -88,3 +88,6 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
+[submodule "bundle/switch"]
+	path = bundle/switch
+	url = git://github.com/AndrewRadev/switch.vim.git
