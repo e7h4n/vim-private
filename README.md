@@ -5,7 +5,6 @@
 
 尽管作者对该配置的多平台兼容性有一定处理，但因为每人的使用习惯都不一致，所以并不建议直接使用该配置文件作为生产配置使用，而是建议将该项目 fork 出一个自己的版本来维护。
 
-
 有更多问题，欢迎直接联系作者。
 
 ## 安装
@@ -32,7 +31,7 @@
 
 升级插件
 
-    git submodule foreach "git checkout master && git pull"
+    vim +BundleInstall! +BundleClean +qall
 
 
 ## 配置修改
@@ -45,7 +44,7 @@
 
 ### 自定义快捷键
 
-大部分自定义快捷键都在 <code>bundle/Config/plugin/shortcut.vim</code> 中配置，<code>&lt;Leader&gt;</code> 键被映射为 <code>\\</code>
+大部分自定义快捷键都在 <code>bundle/Config/plugin/shortcut.vim</code> 中配置，<code>&lt;Leader&gt;</code> 键被映射为 <code>,</code>
 
 * Normal 模式
     * <code>gp</code>: 粘贴最近一次 yank 操作的文字 (比如 yy 之后又 dd 了，可以用 gp 来粘贴 yy 的结果)
@@ -98,7 +97,6 @@
 * nerdcommenter 快速给代码加注释
 * vim-surround 修改一段代码周围的引号、括号等
 * CmdlineComplete 给命令行提供补全功能
-* bufexplorer 提供 Buffer 列表
 * zencoding-vim
     * 快捷键是 <code>&lt;Ctrl&gt;-k</code>
 * nerdtree 查看目录树

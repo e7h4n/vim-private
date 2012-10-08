@@ -82,3 +82,6 @@ autocmd BufWritePost *.js call handy#GenerateTag()
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*/*target/*,*/target*/*,*/node_modules/*,*/frontend-target/*,*/tmp_creta_frontend_root/*,*/.front-build-cache/*,frontend-target
+
+" use common , as leader key, more convenience
+let mapleader = ","

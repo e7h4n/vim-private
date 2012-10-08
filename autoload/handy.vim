@@ -24,7 +24,7 @@ function! handy#ToggleSnipple()
         edit #
         bdelete #
     else
-        edit `=expand("~/.vim/bundle/customSnippet/snippets/" . &ft . ".snippets")`
+        edit `=expand("~/.vim/snippets/" . &ft . ".snippets")`
     endif
 endfunction
 
