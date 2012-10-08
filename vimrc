@@ -35,6 +35,7 @@ Bundle 'parantapa/moin.vim'
 Bundle 'mattn/gist-vim'
 
 " scripts by me
+Bundle 'perfectworks/tabular'
 Bundle 'perfectworks/jslint.vim'
 Bundle 'perfectworks/chdirectory'
 Bundle 'perfectworks/vim-velocity'
