@@ -17,6 +17,9 @@ set enc=utf-8
 set fileencodings=ucs-bom,utf-8,gbk
 set fileformats=unix,dos,mac
 
+" leader key
+let mapleader = ","
+
 " 缩进设置
 set smarttab
 set tabstop=4

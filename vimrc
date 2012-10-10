@@ -46,3 +46,7 @@ Bundle 'cmdline-completion'
 
 " required by vundle
 filetype plugin indent on
+
+source $HOME/.vim/rc/config.vim
+source $HOME/.vim/rc/shortcut.vim
+source $HOME/.vim/rc/statusline.vim
