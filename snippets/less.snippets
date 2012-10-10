@@ -2,3 +2,18 @@ snippet split
 	//-----------------------------------
 	// ${1}
 	//-----------------------------------
+snippet tmpl
+	/**
+	 * `expand("%:t")`, `system("date \"+%b %-d, %Y\"")`
+	 *
+	 * Copyright `system("date +%Y")` fenbi.com. All rights reserved.
+	 * FENBI.COM PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+	 */
+
+	/**
+	 * @author `system("whoami")`<`system("whoami")`@fenbi.com>
+	 */
+
+	${1}
+
+	/* vim: set et sw=4 ts=4 sts=4: */

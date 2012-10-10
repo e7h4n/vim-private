@@ -1,14 +1,30 @@
+snippet tmpl
+	##
+	## `expand("%:t")`, `system("date \"+%b %-d, %Y\"")`
+	##
+	## Copyright `system("date +%Y")` fenbi.com. All rights reserved.
+	## FENBI.COM PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+	##
+
+	##
+	## @author `system("whoami")`<`system("whoami")`@fenbi.com>
+	##
+
+	${1}
+
+	## vim: set et sw=4 ts=4 sts=4:
+
 snippet doc
 	<!DOCTYPE HTML>
 
 snippet mod
 	<div class="mod${1}">
-		<b class="top"><b class="tl"></b><b class="tr"></b></b>
-		<div class="inner">
-			<div class="hd">${2}</div>
-			<div class="bd">${3}</div>
-		</div>
-		<b class="bottom"><b class="bl"></b><b class="br"></b></b>
+	<b class="top"><b class="tl"></b><b class="tr"></b></b>
+	<div class="inner">
+	<div class="hd">${2}</div>
+	<div class="bd">${3}</div>
+	</div>
+	<b class="bottom"><b class="bl"></b><b class="br"></b></b>
 	</div>
 
 snippet ph
@@ -17,3 +33,4 @@ snippet ph
 snippet hr
 	<!---------------------- Split ---------------------->
 	<h1 class="sandbox-title">${1}</h1>
+

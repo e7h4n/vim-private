@@ -87,29 +87,41 @@ snippet evtdoc
 	 * @param {Event} evt
 	 */
 snippet tmpl
-	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
-
-	/*global define: true */
+	/**
+	 * `expand("%:t")`, `system("date \"+%b %-d, %Y\"")`
+	 *
+	 * Copyright `system("date +%Y")` fenbi.com. All rights reserved.
+	 * FENBI.COM PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+	 */
 
 	/**
-	 * @author zhangyc<zhangyc@fenbi.com>
-	 * @version: $Id: $
+	 * @author `system("whoami")`<`system("whoami")`@fenbi.com>
 	 */
+
+	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
+	/*global define: true */
 
 	define(function (require, exports) {
 		'use strict';
 
 		${1}
 	});
-snippet vt
-	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
 
-	/*global define: true */
+	/* vim: set et sw=4 ts=4 sts=4: */
+snippet vt
+	/**
+	 * `expand("%:t")`, `system("date \"+%b %-d, %Y\"")`
+	 *
+	 * Copyright `system("date +%Y")` fenbi.com. All rights reserved.
+	 * FENBI.COM PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+	 */
 
 	/**
-	 * @author zhangyc<zhangyc@fenbi.com>
-	 * @version: $Id: $
+	 * @author `system("whoami")`<`system("whoami")`@fenbi.com>
 	 */
+
+	/*jslint browser: true, vars: true, nomen: true, indent: 4, plusplus: true, sloppy: true*/
+	/*global define: true */
 
 	define(function (require, exports) {
 		'use strict';
@@ -120,6 +132,8 @@ snippet vt
 
 		return $1;
 	});
+
+	/* vim: set et sw=4 ts=4 sts=4: */
 snippet super
 	${1}.prototype.${2}.apply(this, arguments);
 snippet sc
